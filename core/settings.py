@@ -12,7 +12,7 @@ https://docs.djangoproject.com/en/3.2/ref/settings/
 import os
 from pathlib import Path
 import environ
-
+#creamos la variables de ambiente
 env= environ.Env()
 environ.Env.read_env()
 
@@ -25,6 +25,8 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/3.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
+#primero creamos un archivo de texto .env
+#obtenemos los valores de las varibles 
 SECRET_KEY = os.eviron.get('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
@@ -49,6 +51,7 @@ INSTALLED_APPS = [
 
 
 ]
+# para instalar tailwind
 
 TAILWIND_APP_NAME = 'theme'
 
@@ -56,6 +59,7 @@ INTERNAL_IPS = [
     '127.0.0.1'
 ]
 
+#la ruta de node.js para que corra tailwind
 NPM_BIN_PATH = r"C:\Program Files\nodejs\npm.cmd"
 
 MIDDLEWARE = [
@@ -135,6 +139,7 @@ USE_TZ = True
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.2/howto/static-files/
+
 
 STATIC_URL = '/static/'
 
