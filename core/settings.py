@@ -27,11 +27,11 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # SECURITY WARNING: keep the secret key used in production secret!
 #primero creamos un archivo de texto .env
 #obtenemos los valores de las varibles 
-SECRET_KEY = os.eviron.get('SECRET_KEY')
+SECRET_KEY = os.environ.get('SECRET_KEY')
 # Error en el secret 'Arreglar'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = os.eviron.get('DEBUG')
+DEBUG = os.environ.get('DEBUG')
 
 ALLOWED_HOSTS = []
 
